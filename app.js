@@ -5,9 +5,8 @@ import authRouter from "./routes/auth.routes.js";
 import subscriptionRouter from "./routes/subscription.route.js";
 import connectToDatabase from "./database/mongodb.js";
 import cookieParser from 'cookie-parser'
-import errorMiddleware from 'middlewares/error.middleware.js'
+import errorMiddleware from './middlewares/error.middleware.js'
 const app = express()
-
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 app.use(cookieParser())
