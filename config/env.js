@@ -1,5 +1,7 @@
 import { config } from "dotenv";
 
+// eslint-disable-next-line no-undef
 config({path: `.env.${process.env.NODE_ENV || 'development'}.local`})
 
-export const {PORT, NODE_ENV} = process.env
+// eslint-disable-next-line no-undef
+export const {PORT, NODE_ENV, MONGO_URI} = process.env
