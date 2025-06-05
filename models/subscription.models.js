@@ -71,7 +71,7 @@ subscriptionSchema.pre('save', function (next){
             monthly: 30,
             yearly: 365,
         }
-        this.renewaDate = new Date(this.startDate)
+        this.renewalDate = new Date(this.startDate)
         this.renewalDate.setDate(this.renewalDate.getDate() + renewalPeriods[this.frequency])
     }
 
